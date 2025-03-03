@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>technical-documentation-web</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+</head>
+<body>
+	<main id="main-doc">
+		<nav id="navbar">
+			<header>Python Basics</header>
+			<ul>
+				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#what-you-should-already-know">What You Should Already Know</a></li>
+				<li><a href="#python-vs-other-languages">Python vs. Other Languages</a></li>
+				<li><a href="#hello-world">Hello World</a></li>
+				<li><a href="#variables">Variables</a></li>
+				<li><a href="#data-types">Data Types</a></li>
+				<li><a href="#if-else-statement">If...Else Statement</a></li>
+				<li><a href="#loops">Loops</a></li>
+				<li><a href="#function-declarations">Function Declarations</a></li>
+			</ul>
+		</nav>		
+		<section class="main-section">
+			<header id="Introduction">Introduction</header>
+			<p>Python is a cross-platform, object-oriented programming language. It is a simple and versatile language known 
+				for its readability and ease of use. Python can be used in various environments, such as web development, 
+				data science, automation, and artificial intelligence.
+			</p>
+			<p>Python includes a standard library with built-in functions and modules, such as os, sys, datetime, and math, 
+				along with core language constructs like operators, control structures, and statements. Python can be extended 
+				for various purposes by importing additional libraries. For example:
+			</p>
+			<ul>
+				<li>Web development: Python can be used with frameworks like Django and Flask to create web applications.</li>
+				<li>Data science: Libraries such as NumPy, pandas, and Matplotlib extend Python for numerical computing and data visualization.</li>
+				<li>Automation: Python can automate tasks using scripts to manipulate files, send emails, or interact with APIs.</li>
+			</ul>
+		</section>
+		<section class="main-section">
+			<header id="What_You_Should_Already_Know">What You Should Already Know</header>
+			<p>
+				This guide assumes you have the following basic background:
+			</p>
+			<ul>
+				<li>A general understanding of computer programming concepts.</li>
+				<li>Familiarity with using a command-line interface (CLI) or terminal.</li>
+				<li>Some exposure to programming concepts like variables, loops, and functions.</li>
+			</ul>
+		</section>
+		<section class="main-section">
+			<header id="Python_vs._Other_Languages">Python vs. Other Languages</header>
+			<p>
+				Python is often compared to languages like Java, JavaScript, and C. While it shares similarities, it has key differences:
+			</p>
+			<ul>
+				<li>Python is dynamically typed, whereas Java and C require explicit type declarations.</li>
+				<li>Python follows an indentation-based syntax instead of using braces {} like Java or C.</li>
+				<li>Python is interpreted rather than compiled, which allows for rapid development and testing.</li>
+				<li>Python uses a prototype-based object model rather than a class-based model like Java.</li>
+			</ul>
+		</section>
+		<section class="main-section">
+			<header id="Hello_World">Hello World</header>
+			<p>
+				To write your first Python program, open a terminal or an editor and type:
+			</p>
+			<pre>
+				<code>
+					def hello():
+						print("Hello, World!")
+				</code>
+			</pre>				
+			<p>
+				Run the script, and it will output:
+			</p>
+			<pre>
+				<code>
+						"Hello World"
+				</code>
+			</pre>
+		</section>
+		<section class="main-section">
+			<header id="Variables">Variables</header>
+			<p>
+				In Python, variables are used to store data values. Variable names must follow these rules:
+			</p>
+			<ul>
+				<li>They must start with a letter or an underscore (_).</li>
+				<li>They cannot start with a number.</li>
+				<li>They can contain letters, numbers, and underscores.</li>
+				<li>They are case-sensitive.</li>
+			</ul>
+			<p>
+				The example:
+			</p>
+			<pre>
+				<code>
+					x = 10
+					name = "Alice"
+					_is_valid = True
+				</code>
+			</pre>
+			<h2>Declaring variables</h2>
+			<p>
+				Python allows variable declaration by assigning a value to a name:
+			</p>
+			<pre>
+				<code>
+					x = 42  # Integer
+					pi = 3.14  # Float
+					name = "Python"  # String
+				</code>
+			</pre>
+			<h2>Variable Scope</h2>
+			<ul>
+				<li>Global variables: Declared outside functions and accessible throughout the program.</li>
+				<li>Local variables: Declared within a function and accessible only inside that function.</li>
+			</ul>
+			<p>
+				Example:
+			</p>
+			<pre>
+				<code>
+					global_var = "I am global"
+
+					def my_function():
+						local_var = "I am local"
+						print(local_var)
+
+					my_function()
+					print(global_var)
+				</code>
+			</pre>
+			<h2>Constants</h2>
+			<p>
+				Python does not have a built-in constant declaration, but by convention, constants are written in uppercase:
+			</p>
+			<pre>
+				<code>
+					PI = 3.14159
+					MAX_USERS = 1000
+				</code>
+			</pre>
+		</section>
+		<section class="main-section">
+			<header id="Data_Types">Data Types</header>
+			<p>
+				Python supports multiple data types, including:
+			</p>
+			<ul>
+				<li>Numeric: int, float, complex</li>
+				<li>Boolean: True, False</li>
+				<li>String: str</li>
+				<li>List: An ordered collection (mutable)</li>
+				<li>Tuple: An ordered collection (immutable)</li>
+				<li>Dictionary: A key-value mapping</li>
+				<li>Set: An unordered collection of unique elements</li>
+			</ul>
+			<p>
+				Example:
+			</p>
+			<pre>
+				<code>
+					age = 25  # int
+					height = 5.9  # float
+					name = "Alice"  # str
+					is_student = True  # bool
+					numbers = [1, 2, 3, 4]  # list
+					coordinates = (10, 20)  # tuple
+					person = {"name": "Alice", "age": 25}  # dictionary
+					unique_numbers = {1, 2, 3, 4}  # set
+				</code>
+			</pre>
+		</section>
+		<section class="main-section">
+			<header id="If...Else_Statement">If...Else Statement</header>
+			<p>
+				The if statement executes a block of code based on a condition:
+			</p>
+			<pre>
+				<code>
+					x = 10
+					if x > 5:
+						print("x is greater than 5")
+					else:
+						print("x is not greater than 5")
+				</code>
+			</pre>
+			<p>
+				Multiple conditions can be tested using elif:
+			</p>
+			<pre>
+				<code>
+					x = 15
+					if x < 10:
+						print("x is less than 10")
+					elif x < 20:
+						print("x is between 10 and 20")
+					else:
+						print("x is 20 or greater")
+				</code>
+			</pre>
+		</section>
+		<section class="main-section">
+			<header id="While_Loop">While Loop</header>
+			<p>
+				A while loop executes as long as a condition is True:
+			</p>
+			<pre>
+				<code>
+					n = 0
+					while n < 3:
+						print("Iteration", n)
+						n += 1
+				</code>
+			</pre>
+			<p>
+				Output:
+			</p>
+			<pre>
+				<code>
+					Iteration 0
+					Iteration 1
+					Iteration 2
+				</code>
+			</pre>
+		</section>
+		<section class="main-section">
+			<header id="For_Loop">For Loop</header>
+			<p>
+				The for loop is used to iterate over a sequence (such as a list, tuple, dictionary, or string):
+			</p>
+			<pre>
+				<code>
+					fruits = ["apple", "banana", "cherry"]
+					for fruit in fruits:
+						print(fruit)
+				</code>
+			</pre>
+			<p>
+				Output:
+			</p>
+			<pre>
+				<code>
+					apple
+					banana
+					cherry
+				</code>
+			</pre>
+			<p>
+				You can also use the range() function to generate a sequence of numbers:
+			</p>
+			<pre>
+				<code>
+					for i in range(5):
+    					print(i)
+				</code>
+			</pre>
+			<p>
+				Output:
+			</p>
+			<pre>
+				<code>
+					0
+					1
+					2
+					3
+					4
+				</code>
+			</pre>
+		</section>
+		<section class="main-section">
+			<header id="Fuction_Declarations">Function Declarations</header>
+			<p>
+				Functions in Python are defined using the def keyword:
+			</p>
+			<pre>
+				<code>
+					def greet(name):
+						print("Hello,", name)
+
+					greet("Alice")
+				</code>
+			</pre>
+			<p>
+				Output:
+			</p>
+			<pre>
+				<code>
+					"Hello, Alice"
+				</code>
+			</pre>
+			<p>
+				Python’s simple and powerful syntax makes it an excellent choice for beginners and experienced developers alike.
+			</p>
+		</section>
+	</main>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+	background-color: #fff;
+	display: flex;
+}
+
+#navbar {
+	width: 200px;
+	height: 100vh;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px;
+}
+
+#navbar a {
+	display: block;
+	text-decoration: none;
+	padding: 10px 0;
+	
+}
+
+#navbar a:hover {
+	color: purple;
+}
+
+.main-section {
+	margin-left: 220px;
+	padding: 20px;
+	position:relative;
+}
+
+.main-section header {
+	
+}
